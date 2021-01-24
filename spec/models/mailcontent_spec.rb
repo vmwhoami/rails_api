@@ -6,12 +6,18 @@ RSpec.describe Mailcontent, type: :model do
   end
 
   it 'should validate the precense of email' do
-    vitalie = FactoryBot.build :mailcontent, :name => ''
-    expect(vitalie).not_to be_valid
-    expect(vitalie.error.messages[:name]).to include('Name has to be present')
+    testing = FactoryBot.build :mailcontent, :name => ''
+    expect(testing).not_to be_valid
+    expect(testing.error.messages[:name]).to include('Name has to be present')
   end
  
-  it 'should validate the precense of the phone name' do
+  it 'should validate the precense of email' do
+    testing = FactoryBot.build :mailcontent, :email => ''
+    expect(testing).not_to be_valid
+    expect(testing.error.messages[:email]).to include('Email has to be present')
+  end
+
+  it 'should validate the precense of the phone number' do
     
   end
 end
