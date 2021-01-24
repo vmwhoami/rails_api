@@ -30,6 +30,7 @@ module RailsApi
     # the framework and any gems in your application.
 
     # Don't generate system test files.
+    config.api_only = true
     config.generators.system_tests = nil
   end
 end
