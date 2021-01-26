@@ -49,3 +49,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
 gem 'factory_bot_rails', '~> 6.1'
 gem 'rack-cors', '~> 0.4.0'
+
+gem 'kaminari'
