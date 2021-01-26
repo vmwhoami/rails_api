@@ -3,7 +3,7 @@ class CreateMailcontents < ActiveRecord::Migration[6.0]
     create_table :mailcontents do |t|
       t.string :name
       t.string :email
-      t.decimal :phone
+      t.string :phone
       t.text :content
 
       t.timestamps

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_01_24_161237) do
   create_table "mailcontents", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.decimal "phone"
+    t.string "phone"
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
