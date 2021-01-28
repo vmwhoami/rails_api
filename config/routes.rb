@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :mailcontent, only: [:index,:show]
+  get "/mailcontent", to: "mailcontent#index"
+  # resources :mailcontent, only: [:index,:show]
 end
